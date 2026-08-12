@@ -1,0 +1,25 @@
+{
+  "protocol": {
+    "graphs_per_suite": 50,
+    "suites": ["3nodes", "4nodes", "5nodes", "6nodes", "7nodes"],
+    "python_hash_seed": 0,
+    "hidden_truth_access": "after_prediction_submission",
+    "llm_calls": 0
+  },
+  "seed_1": [
+    {"nodes": 3, "task_accuracy": 1.00, "all_edge_precision": 1.000, "all_edge_recall": 1.000, "all_edge_f1": 1.000, "mean_directed_shd": 0.000, "frequency_edge_f1": 1.000, "frequency_weight_f1": 1.000},
+    {"nodes": 4, "task_accuracy": 1.00, "all_edge_precision": 0.938, "all_edge_recall": 1.000, "all_edge_f1": 0.965, "mean_directed_shd": 0.320, "frequency_edge_f1": 1.000, "frequency_weight_f1": 1.000},
+    {"nodes": 5, "task_accuracy": 1.00, "all_edge_precision": 0.916, "all_edge_recall": 0.998, "all_edge_f1": 0.952, "mean_directed_shd": 0.660, "frequency_edge_f1": 1.000, "frequency_weight_f1": 1.000},
+    {"nodes": 6, "task_accuracy": 0.90, "all_edge_precision": 0.818, "all_edge_recall": 0.971, "all_edge_f1": 0.883, "mean_directed_shd": 2.180, "frequency_edge_f1": 1.000, "frequency_weight_f1": 1.000},
+    {"nodes": 7, "task_accuracy": 0.96, "all_edge_precision": 0.766, "all_edge_recall": 0.978, "all_edge_f1": 0.852, "mean_directed_shd": 3.620, "frequency_edge_f1": 1.000, "frequency_weight_f1": 1.000}
+  ],
+  "seed_1_macro": {"task_accuracy": 0.972, "all_edge_precision": 0.888, "all_edge_recall": 0.989, "all_edge_f1": 0.931, "mean_directed_shd": 1.356, "frequency_edge_f1": 1.000, "frequency_weight_f1": 1.000},
+  "seed_3": [
+    {"nodes": 3, "task_accuracy": 1.00, "numeric_within_5_hz": 1.00, "all_edge_f1": 1.000, "mean_directed_shd": 0.000},
+    {"nodes": 4, "task_accuracy": 1.00, "numeric_within_5_hz": 1.00, "all_edge_f1": 0.963, "mean_directed_shd": 0.340},
+    {"nodes": 5, "task_accuracy": 0.98, "numeric_within_5_hz": 1.00, "all_edge_f1": 0.949, "mean_directed_shd": 0.700},
+    {"nodes": 6, "task_accuracy": 0.98, "numeric_within_5_hz": 1.00, "all_edge_f1": 0.877, "mean_directed_shd": 2.280},
+    {"nodes": 7, "task_accuracy": 0.96, "numeric_within_5_hz": 1.00, "all_edge_f1": 0.858, "mean_directed_shd": 3.440}
+  ],
+  "seed_3_macro": {"task_accuracy": 0.984, "numeric_within_5_hz": 1.000, "all_edge_f1": 0.929, "mean_directed_shd": 1.352}
+}

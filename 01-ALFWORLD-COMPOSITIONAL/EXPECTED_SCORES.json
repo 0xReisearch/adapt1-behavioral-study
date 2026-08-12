@@ -1,0 +1,22 @@
+{
+  "protocol": {
+    "training_games": 3520,
+    "seeds": [0, 1, 2, 3, 4],
+    "id_games_per_seed": 140,
+    "ood_games_per_seed": 134,
+    "primary_metric": "unweighted_macro_success_across_six_task_families"
+  },
+  "aggregate": {
+    "id_macro_success_mean": 0.9346,
+    "id_macro_success_sample_sd": 0.0113,
+    "ood_macro_success_mean": 0.9087,
+    "ood_macro_success_sample_sd": 0.0097
+  },
+  "per_seed": [
+    {"seed": 0, "id_successes": 132, "id_micro": 0.9429, "id_macro": 0.9303, "ood_successes": 122, "ood_micro": 0.9104, "ood_macro": 0.9094},
+    {"seed": 1, "id_successes": 134, "id_micro": 0.9571, "id_macro": 0.9449, "ood_successes": 121, "ood_micro": 0.9030, "ood_macro": 0.8980},
+    {"seed": 2, "id_successes": 133, "id_micro": 0.9500, "id_macro": 0.9348, "ood_successes": 122, "ood_micro": 0.9104, "ood_macro": 0.9066},
+    {"seed": 3, "id_successes": 134, "id_micro": 0.9571, "id_macro": 0.9449, "ood_successes": 121, "ood_micro": 0.9030, "ood_macro": 0.9051},
+    {"seed": 4, "id_successes": 130, "id_micro": 0.9286, "id_macro": 0.9179, "ood_successes": 124, "ood_micro": 0.9254, "ood_macro": 0.9242}
+  ]
+}

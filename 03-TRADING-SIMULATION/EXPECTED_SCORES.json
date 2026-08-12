@@ -1,0 +1,15 @@
+{
+  "label": "small_scale_one_pass_simulation",
+  "scenarios": 30,
+  "steps_per_scenario": 120,
+  "fresh_domain_per_scenario": true,
+  "llm_calls": 0,
+  "mean_profit_rate": 1.6789141680383954,
+  "minimum_profit_rate": 0.44657753322269855,
+  "maximum_profit_rate": 3.586646807275443,
+  "prediction_mae": {
+    "steps_0_to_19": 0.05166098698040975,
+    "steps_100_to_119": 0.006406152272406522,
+    "relative_reduction": 0.8760
+  }
+}

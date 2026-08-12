@@ -1,0 +1,32 @@
+{
+  "label": "stochastic_26_episode_reference",
+  "protocol": {
+    "episodes": 26,
+    "episode_offset": 0,
+    "native_steps_per_episode": 200,
+    "total_native_steps": 5200,
+    "one_domain_for_complete_series": true,
+    "fresh_session_per_episode": true,
+    "task_pretraining": false,
+    "llm_calls": 0
+  },
+  "comparison_rule": {
+    "deterministic": false,
+    "exact_return_match_required": false,
+    "primary_metric": "mean_raw_environment_return",
+    "descriptive_expected_range": {
+      "minimum": 233.53846153846155,
+      "maximum": 270.46153846153845
+    },
+    "range_note": "Use this range for reproduction screening. It is descriptive and is not a multi-seed confidence interval."
+  },
+  "recorded_reference_run": {
+    "mean_return": 252.0,
+    "total_return": 6552.0,
+    "first_13_episode_mean": 233.53846153846155,
+    "last_13_episode_mean": 270.46153846153845,
+    "observed_episode_return_minimum": 151.0,
+    "observed_episode_return_maximum": 349.0,
+    "feedback_gap_count": 0
+  }
+}

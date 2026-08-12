@@ -1,0 +1,24 @@
+{
+  "domain_id": "interactive_candidate_policy",
+  "description": "A variable-action sequential domain whose policy is learned from structured state, candidate, trajectory, and outcome features.",
+  "metric": "binary_episode_success",
+  "action_budget": 50,
+  "state_representation": {
+    "text_projection": "signed_token_hash",
+    "history": ["selected_actions", "observations", "candidate_visit_counts"],
+    "normalization": "l2"
+  },
+  "candidate_representation": {
+    "text_projection": "signed_token_hash",
+    "comparisons": ["goal_overlap", "observation_overlap", "history_overlap"],
+    "novelty": ["exact_action_count", "argument_visit_count"]
+  },
+  "learning": {
+    "kind": "candidate_policy",
+    "discount": 0.97,
+    "dimensions": 768,
+    "hidden_dimensions": 256,
+    "reference_actions": "training_split_only",
+    "evaluation_expert_access": false
+  }
+}
