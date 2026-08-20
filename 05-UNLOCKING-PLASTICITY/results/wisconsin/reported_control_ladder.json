@@ -1,0 +1,31 @@
+{
+  "benchmark": "Wisconsin Diagnostic Breast Cancer",
+  "conditions": {
+    "best_past_loss_coalition": {
+      "balanced_accuracy_mean": 0.8761,
+      "log_loss_mean": 0.2493
+    },
+    "cup": {
+      "balanced_accuracy_mean": 0.8726,
+      "log_loss_mean": 0.3087
+    },
+    "disabled": {
+      "balanced_accuracy_mean": 0.5,
+      "log_loss_mean": 0.6635
+    },
+    "fixed_uniform": {
+      "balanced_accuracy_mean": 0.8858,
+      "log_loss_mean": 0.3288
+    }
+  },
+  "order_count": 30,
+  "provenance": "reported in Unlocking Plasticity Rules",
+  "reproduction_status": "aggregate_only",
+  "reported_comparisons": {
+    "cup_log_loss_reduction_vs_fixed_uniform": 0.0201,
+    "cup_seed_wins_vs_fixed_uniform": "30/30",
+    "fixed_uniform_balanced_accuracy_advantage_vs_cup": 0.0131,
+    "best_coalition_log_loss_seed_wins_vs_cup": "30/30"
+  }
+}
+

@@ -1,0 +1,52 @@
+{
+  "benchmark": "POPGym RepeatPreviousEasy",
+  "frozen_episodes_per_seed": 16,
+  "online_training_interactions_per_seed": 510,
+  "seed_count": 5,
+  "source_commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+  "tcp_minus_memoryless": {
+    "maximum_gain": 1.567708333333334,
+    "mean_gain": 1.5109375000000005,
+    "minimum_gain": 1.489583333333334,
+    "paired_95_percent_t_interval": [
+      1.4705899497693486,
+      1.5512850502306523
+    ],
+    "paired_gains": [
+      1.567708333333334,
+      1.5078125000000004,
+      1.4921875000000004,
+      1.497395833333334,
+      1.489583333333334
+    ]
+  },
+  "variants": {
+    "memoryless": {
+      "all_freeze_checks_passed": true,
+      "frozen_action_accuracy_mean": 0.24453125,
+      "frozen_action_accuracy_sample_sd_across_seeds": 0.016247370580535478,
+      "frozen_brier_mean": 0.7652348450106891,
+      "frozen_nll_mean": 1.418461324616612,
+      "frozen_return_mean": -0.5109374999999998,
+      "frozen_return_sample_sd_across_seeds": 0.03249474116107102
+    },
+    "tcp": {
+      "all_freeze_checks_passed": true,
+      "frozen_action_accuracy_mean": 1.0,
+      "frozen_action_accuracy_sample_sd_across_seeds": 0.0,
+      "frozen_brier_mean": 0.2794522612494215,
+      "frozen_nll_mean": 0.5451043219713572,
+      "frozen_return_mean": 1.0000000000000007,
+      "frozen_return_sample_sd_across_seeds": 0.0
+    },
+    "tcp_cup": {
+      "all_freeze_checks_passed": true,
+      "frozen_action_accuracy_mean": 1.0,
+      "frozen_action_accuracy_sample_sd_across_seeds": 0.0,
+      "frozen_brier_mean": 0.37582251996247684,
+      "frozen_nll_mean": 0.7227440100485134,
+      "frozen_return_mean": 1.0000000000000007,
+      "frozen_return_sample_sd_across_seeds": 0.0
+    }
+  }
+}

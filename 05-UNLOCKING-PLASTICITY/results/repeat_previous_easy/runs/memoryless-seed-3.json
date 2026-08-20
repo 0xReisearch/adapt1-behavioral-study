@@ -1,0 +1,118 @@
+{
+  "action_counts": {
+    "emit_0": 13,
+    "emit_1": 23,
+    "emit_2": 1285,
+    "emit_3": 5
+  },
+  "benchmark": "POPGym RepeatPreviousEasy",
+  "cup_applied_decisions": 0,
+  "episode_returns": [
+    -0.7083333333333335,
+    -0.49999999999999983,
+    -0.4999999999999998,
+    -0.4999999999999998,
+    -0.5416666666666665,
+    -0.45833333333333315,
+    -0.49999999999999983,
+    -0.625,
+    -0.45833333333333315,
+    -0.5833333333333333
+  ],
+  "final_10_mean": -0.5374999999999999,
+  "final_active_cup_structures": [],
+  "first_episode_return": -0.7083333333333335,
+  "frozen_evaluation_mean": -0.49739583333333315,
+  "frozen_evaluation_returns": [
+    -0.45833333333333315,
+    -0.45833333333333315,
+    -0.45833333333333315,
+    -0.49999999999999983,
+    -0.49999999999999983,
+    -0.49999999999999983,
+    -0.4999999999999998,
+    -0.4999999999999998,
+    -0.5416666666666665,
+    -0.45833333333333315,
+    -0.4999999999999998,
+    -0.49999999999999983,
+    -0.49999999999999983,
+    -0.49999999999999983,
+    -0.5416666666666665,
+    -0.5416666666666665
+  ],
+  "frozen_probability_metrics": {
+    "action_accuracy": 0.2513020833333333,
+    "brier": 0.7607224002357572,
+    "nll": 1.407759587433417,
+    "scored_decisions": 768
+  },
+  "frozen_state_after": {
+    "learner_version": 510,
+    "model_trained_samples": 448,
+    "model_version": 448,
+    "posterior_sha256": "dea43184d9ea48cbaab289e17fbf0f7b5ee91e4332ed34952cf38dd44da9cef1",
+    "sample_count": 510
+  },
+  "frozen_state_before": {
+    "learner_version": 510,
+    "model_trained_samples": 448,
+    "model_version": 448,
+    "posterior_sha256": "dea43184d9ea48cbaab289e17fbf0f7b5ee91e4332ed34952cf38dd44da9cef1",
+    "sample_count": 510
+  },
+  "frozen_state_unchanged": true,
+  "interactions_including_frozen_evaluation": 1326,
+  "learner": {
+    "model_type": "mlp_v2",
+    "sample_count": 510,
+    "training_status": {
+      "current_version": 452,
+      "installed": true,
+      "loss": 0.16891124844551086,
+      "report": {
+        "device": "cuda",
+        "epochs": 75,
+        "loss": 0.16891124844551086,
+        "model_type": "mlp_v2",
+        "sample_count": 448,
+        "trained": true,
+        "validation_baseline_loss": 0.1748756468296051,
+        "validation_loss": 0.1707206666469574,
+        "validation_skill": 0.023759627243559067,
+        "version": 448
+      },
+      "status": "trained",
+      "trained_samples": 448,
+      "validation_baseline_loss": 0.1748756468296051,
+      "validation_loss": 0.1707206666469574,
+      "validation_skill": 0.023759627243559067,
+      "version": 448,
+      "version_lag": 4
+    },
+    "version": 510
+  },
+  "mean_learning_curve_return": -0.5374999999999999,
+  "post_first_episode_mean": -0.5185185185185184,
+  "posterior_source_counts": {
+    "contextual_memory": 1326,
+    "learned_model": 1001
+  },
+  "protocol": {
+    "episodes": 10,
+    "equal_action_priors": true,
+    "evaluation_episodes": 16,
+    "evaluation_mode": "frozen_no_feedback",
+    "evaluation_seed_start": 2000,
+    "forced_coverage": false,
+    "future_observation_supplied": false,
+    "learner_seed": 65003,
+    "prediction": "prequential",
+    "prior_task_state": "empty",
+    "relation_count": 1,
+    "seed_start": 1000,
+    "target_lag_declared": false
+  },
+  "source_commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+  "variant": "memoryless"
+}

@@ -1,0 +1,39 @@
+{
+  "benchmark": "POPGym RepeatPreviousMedium",
+  "online_training_interactions_per_seed": 1030,
+  "seed_count": 5,
+  "source_commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+  "tcp_cup_minus_tcp": {
+    "frozen_seed_0_return_tcp": 0.9999999999999983,
+    "frozen_seed_0_return_tcp_cup": 0.9999999999999983,
+    "mean_absolute_gain": 0.032777777777777704,
+    "paired_95_percent_t_interval": [
+      -0.05654572418654128,
+      0.1221012797420967
+    ],
+    "paired_gains": [
+      0.15833333333333294,
+      0.0027777777777777124,
+      0.0222222222222222,
+      -0.022222222222222143,
+      0.0027777777777778234
+    ],
+    "paired_seed_wins": 4,
+    "relative_gain": 0.11545988258317019
+  },
+  "training_episodes_per_seed": 10,
+  "variants": {
+    "tcp": {
+      "final_episode_return": 0.9444444444444431,
+      "last_five_return": 0.7577777777777769,
+      "mean_learning_curve_return": 0.2838888888888884,
+      "sample_sd_across_seeds": 0.11391259915792258
+    },
+    "tcp_cup": {
+      "final_episode_return": 0.9722222222222208,
+      "last_five_return": 0.8066666666666658,
+      "mean_learning_curve_return": 0.3166666666666661,
+      "sample_sd_across_seeds": 0.06605623305885613
+    }
+  }
+}

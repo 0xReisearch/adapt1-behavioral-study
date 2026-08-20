@@ -1,0 +1,177 @@
+{
+  "description": "Select one value from the legal output alphabet using the current public observation and online execution feedback.",
+  "domain_id": "repeat-previous-medium-tcp_cup",
+  "hypotheses": [
+    {
+      "name": "legal-output-0",
+      "policy": "emit_0",
+      "policy_features": {
+        "output_value": 0
+      },
+      "predicts": [
+        "A legal output value is selected."
+      ],
+      "relation": "selects_output",
+      "weight": 1.0
+    },
+    {
+      "name": "legal-output-1",
+      "policy": "emit_1",
+      "policy_features": {
+        "output_value": 1
+      },
+      "predicts": [
+        "A legal output value is selected."
+      ],
+      "relation": "selects_output",
+      "weight": 1.0
+    },
+    {
+      "name": "legal-output-2",
+      "policy": "emit_2",
+      "policy_features": {
+        "output_value": 2
+      },
+      "predicts": [
+        "A legal output value is selected."
+      ],
+      "relation": "selects_output",
+      "weight": 1.0
+    },
+    {
+      "name": "legal-output-3",
+      "policy": "emit_3",
+      "policy_features": {
+        "output_value": 3
+      },
+      "predicts": [
+        "A legal output value is selected."
+      ],
+      "relation": "selects_output",
+      "weight": 1.0
+    }
+  ],
+  "learning": {
+    "context": {
+      "event_types": [],
+      "feature_paths": [
+        "values.observation"
+      ],
+      "max_samples": 4096
+    },
+    "enabled": true,
+    "latent_belief": {
+      "enabled": false
+    },
+    "policy": {
+      "abstain_on_ood": false,
+      "action_transfer_strength": 0.0,
+      "exploration_mode": "exploit",
+      "exploration_strength": 0.0,
+      "min_context_observations": 1,
+      "model_max_weight": 0.9,
+      "model_ood_threshold": 1.0,
+      "ood_confidence_penalty": 0.0,
+      "transfer_strength": 0.0
+    },
+    "posterior": {
+      "complexity_penalty": 0.01,
+      "enabled": true,
+      "forgetting_factor": 0.985,
+      "information_gain_weight": 0.0,
+      "learning_rate": 2.0,
+      "minimum_feedback": 3,
+      "minimum_support": 2.0,
+      "plasticity": {
+        "birth_threshold": 0.0025,
+        "complexity_penalty": 0.001,
+        "confidence_z": 1.644854,
+        "enabled": true,
+        "forgetting_factor": 0.99,
+        "inhibition_threshold": 0.0025,
+        "loss": "log",
+        "maximum_active": 4,
+        "maximum_order": 2,
+        "maximum_pending": 256,
+        "maximum_structures": 128,
+        "minimum_support": 16,
+        "prior_strength": 1.0,
+        "quantization_bins": 5,
+        "weight_temperature": 0.025
+      },
+      "scope": "relation",
+      "variance_floor": 0.0025
+    },
+    "reward": {
+      "aggregation": "weighted_mean",
+      "components": [
+        {
+          "field": "values.correct",
+          "goal": "maximize",
+          "max": 1.0,
+          "min": 0.0,
+          "required": true,
+          "weight": 1.0
+        }
+      ]
+    },
+    "temporal_context": {
+      "enabled": true,
+      "episode_path": "metadata.episode_id",
+      "input_paths": [
+        "values.observation"
+      ],
+      "maximum_lag": 64,
+      "step_path": "metadata.step"
+    },
+    "training": {
+      "dimensions": 256,
+      "enabled": true,
+      "epochs": 75,
+      "learning_rate": 0.02,
+      "min_samples": 64,
+      "retrain_interval": 128
+    }
+  },
+  "query_templates": {
+    "feedback_outcomes": [
+      "correct",
+      "incorrect",
+      "unscored"
+    ]
+  },
+  "schema": {
+    "constraints": {
+      "legal_output": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "observation": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "entities": [
+      "public_observation",
+      "legal_output"
+    ],
+    "event_types": [
+      "execution_feedback"
+    ],
+    "relations": [
+      "selects_output"
+    ],
+    "signals": [
+      "observation",
+      "execution_correct"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "learner_seed": 66000,
+    "seed_index": 0,
+    "structures": [
+      {
+        "effective_support": 99.977784,
+        "mean_utility": 0.0712919,
+        "observations": 837,
+        "order": 1,
+        "participants": [
+          "learned_model"
+        ],
+        "status": "consolidated",
+        "utility_interval": [
+          0.03868382,
+          0.10389999
+        ],
+        "utility_variance": 0.03929157,
+        "weight": 0.94225255
+      },
+      {
+        "effective_support": 99.977784,
+        "mean_utility": -0.0217449,
+        "observations": 837,
+        "order": 2,
+        "participants": [
+          "contextual_memory",
+          "learned_model"
+        ],
+        "status": "inhibited",
+        "utility_interval": [
+          -0.03821274,
+          -0.00527707
+        ],
+        "utility_variance": 0.01002125,
+        "weight": -0.56386181
+      }
+    ]
+  },
+  {
+    "learner_seed": 66001,
+    "seed_index": 1,
+    "structures": [
+      {
+        "effective_support": 99.914583,
+        "mean_utility": 0.13064744,
+        "observations": 703,
+        "order": 1,
+        "participants": [
+          "learned_model"
+        ],
+        "status": "consolidated",
+        "utility_interval": [
+          0.10382476,
+          0.15747012
+        ],
+        "utility_variance": 0.0265692,
+        "weight": 0.99462447
+      }
+    ]
+  },
+  {
+    "learner_seed": 66002,
+    "seed_index": 2,
+    "structures": [
+      {
+        "effective_support": 99.980893,
+        "mean_utility": 0.09462514,
+        "observations": 852,
+        "order": 1,
+        "participants": [
+          "learned_model"
+        ],
+        "status": "consolidated",
+        "utility_interval": [
+          0.05985771,
+          0.12939256
+        ],
+        "utility_variance": 0.04466912,
+        "weight": 0.97729126
+      }
+    ]
+  },
+  {
+    "learner_seed": 66003,
+    "seed_index": 3,
+    "structures": [
+      {
+        "effective_support": 99.904599,
+        "mean_utility": 0.05411579,
+        "observations": 692,
+        "order": 2,
+        "participants": [
+          "contextual_memory",
+          "learned_model"
+        ],
+        "status": "consolidated",
+        "utility_interval": [
+          0.02553228,
+          0.08269931
+        ],
+        "utility_variance": 0.03016908,
+        "weight": 0.88052303
+      },
+      {
+        "effective_support": 99.904599,
+        "mean_utility": -0.01188528,
+        "observations": 692,
+        "order": 1,
+        "participants": [
+          "contextual_memory"
+        ],
+        "status": "inhibited",
+        "utility_interval": [
+          -0.01852433,
+          -0.00524623
+        ],
+        "utility_variance": 0.00162758,
+        "weight": -0.37837062
+      }
+    ]
+  },
+  {
+    "learner_seed": 66004,
+    "seed_index": 4,
+    "structures": [
+      {
+        "effective_support": 99.922751,
+        "mean_utility": 0.08254541,
+        "observations": 713,
+        "order": 1,
+        "participants": [
+          "learned_model"
+        ],
+        "status": "consolidated",
+        "utility_interval": [
+          0.04173622,
+          0.12335459
+        ],
+        "utility_variance": 0.06150714,
+        "weight": 0.96318376
+      }
+    ]
+  }
+]

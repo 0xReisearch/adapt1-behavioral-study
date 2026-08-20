@@ -1,0 +1,83 @@
+{
+  "action_counts": {
+    "emit_0": 239,
+    "emit_1": 325,
+    "emit_2": 207,
+    "emit_3": 259
+  },
+  "benchmark": "POPGym RepeatPreviousMedium",
+  "cup_applied_decisions": 381,
+  "episode_returns": [
+    -0.6388888888888885,
+    -0.4722222222222224,
+    -0.4444444444444446,
+    0.27777777777777785,
+    0.27777777777777785,
+    0.8888888888888876,
+    0.8333333333333323,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983
+  ],
+  "final_10_mean": 0.3722222222222215,
+  "final_active_cup_structures": [
+    {
+      "effective_support": 99.980893,
+      "mean_utility": 0.09462514,
+      "observations": 852,
+      "order": 1,
+      "participants": [
+        "learned_model"
+      ],
+      "status": "consolidated",
+      "utility_interval": [
+        0.05985771,
+        0.12939256
+      ],
+      "utility_variance": 0.04466912,
+      "weight": 0.97729126
+    }
+  ],
+  "first_episode_return": -0.6388888888888885,
+  "frozen_evaluation_mean": null,
+  "frozen_evaluation_returns": [],
+  "frozen_state_after": null,
+  "frozen_state_before": null,
+  "frozen_state_unchanged": null,
+  "interactions_including_frozen_evaluation": 1030,
+  "learner": {
+    "model_type": "extra_trees",
+    "sample_count": 1030,
+    "training_status": {
+      "sample_count": 743,
+      "started_at": 1787145891.3482833,
+      "status": "running",
+      "version": 743
+    },
+    "version": 1030
+  },
+  "mean_learning_curve_return": 0.3722222222222215,
+  "post_first_episode_mean": 0.48456790123456706,
+  "posterior_source_counts": {
+    "contextual_memory": 1030,
+    "learned_model": 852
+  },
+  "protocol": {
+    "episodes": 10,
+    "equal_action_priors": true,
+    "evaluation_episodes": 0,
+    "evaluation_mode": "frozen_no_feedback",
+    "evaluation_seed_start": null,
+    "forced_coverage": false,
+    "future_observation_supplied": false,
+    "learner_seed": 66002,
+    "maximum_lag": 64,
+    "prediction": "prequential",
+    "prior_task_state": "empty",
+    "relation_count": 1,
+    "seed_start": 2900,
+    "target_lag_declared": false
+  },
+  "source_commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+  "variant": "tcp_cup"
+}

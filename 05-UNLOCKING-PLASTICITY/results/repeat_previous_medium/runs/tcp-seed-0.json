@@ -1,0 +1,92 @@
+{
+  "action_counts": {
+    "emit_0": 443,
+    "emit_1": 508,
+    "emit_2": 641,
+    "emit_3": 1086
+  },
+  "benchmark": "POPGym RepeatPreviousMedium",
+  "cup_applied_decisions": 0,
+  "episode_returns": [
+    -0.6944444444444439,
+    -0.4444444444444446,
+    -0.4444444444444446,
+    -0.2222222222222223,
+    0.055555555555555546,
+    0.27777777777777785,
+    0.5000000000000001,
+    0.6944444444444439,
+    0.5555555555555555,
+    0.8611111111111099
+  ],
+  "final_10_mean": 0.11388888888888875,
+  "final_active_cup_structures": [],
+  "first_episode_return": -0.6944444444444439,
+  "frozen_evaluation_mean": 0.9999999999999983,
+  "frozen_evaluation_returns": [
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983,
+    0.9999999999999983
+  ],
+  "frozen_state_after": {
+    "learner_version": 1030,
+    "model_trained_samples": 952,
+    "model_version": 952,
+    "posterior_sha256": "419f8cb74149f33cb5cba43afd5f3ce283ead6e2ce8a94421cb66bba5827642f",
+    "sample_count": 1030
+  },
+  "frozen_state_before": {
+    "learner_version": 1030,
+    "model_trained_samples": 952,
+    "model_version": 952,
+    "posterior_sha256": "419f8cb74149f33cb5cba43afd5f3ce283ead6e2ce8a94421cb66bba5827642f",
+    "sample_count": 1030
+  },
+  "frozen_state_unchanged": true,
+  "interactions_including_frozen_evaluation": 2678,
+  "learner": {
+    "model_type": "extra_trees",
+    "sample_count": 1030,
+    "training_status": {
+      "status": "disabled"
+    },
+    "version": 1030
+  },
+  "mean_learning_curve_return": 0.11388888888888875,
+  "post_first_episode_mean": 0.20370370370370347,
+  "posterior_source_counts": {
+    "contextual_memory": 2678,
+    "learned_model": 2499
+  },
+  "protocol": {
+    "episodes": 10,
+    "equal_action_priors": true,
+    "evaluation_episodes": 16,
+    "evaluation_mode": "frozen_no_feedback",
+    "evaluation_seed_start": 3700,
+    "forced_coverage": false,
+    "future_observation_supplied": false,
+    "learner_seed": 66000,
+    "maximum_lag": 64,
+    "prediction": "prequential",
+    "prior_task_state": "empty",
+    "relation_count": 1,
+    "seed_start": 2700,
+    "target_lag_declared": false
+  },
+  "source_commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+  "variant": "tcp"
+}

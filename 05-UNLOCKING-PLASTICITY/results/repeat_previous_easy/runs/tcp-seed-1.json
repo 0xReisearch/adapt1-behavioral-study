@@ -1,0 +1,119 @@
+{
+  "action_counts": {
+    "emit_0": 437,
+    "emit_1": 309,
+    "emit_2": 238,
+    "emit_3": 342
+  },
+  "benchmark": "POPGym RepeatPreviousEasy",
+  "cup_applied_decisions": 0,
+  "episode_returns": [
+    -0.45833333333333315,
+    -0.20833333333333334,
+    0.04166666666666667,
+    0.16666666666666666,
+    0.45833333333333315,
+    0.4999999999999998,
+    0.4999999999999998,
+    0.9583333333333339,
+    0.9166666666666672,
+    1.0000000000000007
+  ],
+  "final_10_mean": 0.3875000000000001,
+  "final_active_cup_structures": [],
+  "first_episode_return": -0.45833333333333315,
+  "frozen_evaluation_mean": 1.0000000000000007,
+  "frozen_evaluation_returns": [
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007,
+    1.0000000000000007
+  ],
+  "frozen_probability_metrics": {
+    "action_accuracy": 1.0,
+    "brier": 0.39594882108266344,
+    "nll": 0.7251836916466061,
+    "scored_decisions": 768
+  },
+  "frozen_state_after": {
+    "learner_version": 510,
+    "model_trained_samples": 448,
+    "model_version": 448,
+    "posterior_sha256": "c955b901b269ec6801389cddc802aa31968eb410c42083d07a60b80ec52e5344",
+    "sample_count": 510
+  },
+  "frozen_state_before": {
+    "learner_version": 510,
+    "model_trained_samples": 448,
+    "model_version": 448,
+    "posterior_sha256": "c955b901b269ec6801389cddc802aa31968eb410c42083d07a60b80ec52e5344",
+    "sample_count": 510
+  },
+  "frozen_state_unchanged": true,
+  "interactions_including_frozen_evaluation": 1326,
+  "learner": {
+    "model_type": "extra_trees",
+    "sample_count": 510,
+    "training_status": {
+      "current_version": 475,
+      "installed": true,
+      "loss": 0.003101384872690807,
+      "report": {
+        "device": "cpu",
+        "loss": 0.003101384872690807,
+        "model_type": "extra_trees",
+        "sample_count": 448,
+        "selection_reason": "robust_model_within_validation_tolerance",
+        "trained": true,
+        "trees": 300,
+        "validation_baseline_loss": 0.18389245867729187,
+        "validation_loss": 0.13169165283616566,
+        "validation_skill": 0.28386594108642627,
+        "version": 448
+      },
+      "status": "trained",
+      "trained_samples": 448,
+      "validation_baseline_loss": 0.18389245867729187,
+      "validation_loss": 0.13169165283616566,
+      "validation_skill": 0.28386594108642627,
+      "version": 448,
+      "version_lag": 27
+    },
+    "version": 510
+  },
+  "mean_learning_curve_return": 0.3875000000000001,
+  "post_first_episode_mean": 0.4814814814814816,
+  "posterior_source_counts": {
+    "contextual_memory": 1326,
+    "learned_model": 1198
+  },
+  "protocol": {
+    "episodes": 10,
+    "equal_action_priors": true,
+    "evaluation_episodes": 16,
+    "evaluation_mode": "frozen_no_feedback",
+    "evaluation_seed_start": 1800,
+    "forced_coverage": false,
+    "future_observation_supplied": false,
+    "learner_seed": 65001,
+    "prediction": "prequential",
+    "prior_task_state": "empty",
+    "relation_count": 1,
+    "seed_start": 800,
+    "target_lag_declared": false
+  },
+  "source_commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+  "variant": "tcp"
+}
