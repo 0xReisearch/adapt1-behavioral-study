@@ -1,0 +1,64 @@
+{
+  "_artifact": "autonomous_domain_reference",
+  "_status": "verified_autonomous_contract",
+  "_runnable": false,
+  "domain_id": "domain-a",
+  "schema": {
+    "event_types": [
+      "action_outcome"
+    ],
+    "public_observation_surface": "<public_numeric_state>",
+    "legal_actions": "<opaque_action_set>",
+    "outcome_channel": "<native_outcome>"
+  },
+  "hypotheses": "<opaque_legal_actions>",
+  "learning": {
+    "sequential": {
+      "bound_transition": {
+        "enabled": true,
+        "event_type": "action_outcome",
+        "input_paths": [],
+        "action_path": "values.action.choice",
+        "group_by_paths": [
+          "values.action.choice"
+        ],
+        "targets": [
+          "values.state.<public_outputs>"
+        ]
+      }
+    },
+    "transition": {
+      "enabled": true,
+      "event_types": [
+        "action_outcome"
+      ],
+      "input_paths": [],
+      "action_path": "values.action.choice",
+      "group_by_paths": [
+        "values.action.choice"
+      ],
+      "targets": [
+        "values.state.<public_outputs>"
+      ],
+      "autonomous_projection": {
+        "enabled": true,
+        "discover_causal_bindings": true
+      },
+      "causal_graph": {
+        "enabled": true,
+        "event_types": [
+          "action_outcome"
+        ],
+        "intervention_path": "",
+        "variables": []
+      }
+    }
+  },
+  "_experiment_note": "Autonomous-Domain experiment declaration. No bijective potion/effect assignment prior is present.",
+  "task_priors": {
+    "bijective_effect_assignment": false,
+    "effect_mapping": null,
+    "hidden_topology": null,
+    "reversibility_prior": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "_artifact": "autonomous_domain_reference",
+  "_status": "verified_autonomous_contract",
+  "_runnable": false,
+  "domain_id": "domain-b",
+  "schema": {
+    "event_types": [
+      "observation",
+      "decision_context",
+      "intervention_result"
+    ]
+  },
+  "hypotheses": [],
+  "learning": {
+    "transition": {
+      "enabled": true,
+      "event_types": [
+        "observation",
+        "intervention_result"
+      ],
+      "input_paths": [],
+      "targets": [
+        {
+          "path": "values.state.<target>",
+          "type": "number"
+        }
+      ],
+      "autonomous_projection": {
+        "enabled": true,
+        "discover_causal_bindings": true
+      },
+      "causal_graph": {
+        "enabled": true,
+        "event_types": [
+          "intervention_result"
+        ],
+        "intervention_path": "",
+        "variables": []
+      }
+    }
+  },
+  "_experiment_note": "Autonomous-Domain experiment declaration."
+}
